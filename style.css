@@ -22,4 +22,13 @@ header nav {
 }
 main {
     background: white;
+    overflow: auto;
+}
+.maintextblock {
+    float: left;
+    width: 570px;
+}
+.mainimg {
+    float: right;
+    width: 285px;
 }
