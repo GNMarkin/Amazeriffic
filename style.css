@@ -3,6 +3,7 @@ body {
 }
 header, main, footer {
     min-width: 855px;
+    padding: 10px;
 }
 header.container, main.container, footer.container {
     max-width: 855px;
@@ -12,11 +13,11 @@ header {
     background: white;
     overflow: auto;
 }
-header h1 {
+header h1, .maintextblock, .contact {
     float: left;
     width: 570px;
 }
-header nav {
+header nav, .mainimg, .sitemap {
     float: right;
     width: 285px;
 }
@@ -24,19 +25,15 @@ main {
     background: white;
     overflow: auto;
 }
-.maintextblock {
-    float: left;
-    width: 570px;
-}
-.mainimg {
-    float: right;
-    width: 285px;
-}
-.contact {
-    float: left;
-    width: 570px;
-}
-.sitemap {
-    float: right;
-    width: 285px;
-}
+.maintextblock li {
+    list-style: circle;
+    margin-left: 25px;
+    padding: 5px;
+ }
+ h1, h2, h3, h5, .maintextblock p {
+     padding: 5px;
+ }
+ h4, .contact p, .sitemap li {
+     padding-left: 5px;
+ }
+ 

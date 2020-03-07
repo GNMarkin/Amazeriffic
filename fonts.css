@@ -1,7 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
-
 }
 h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;   
@@ -18,4 +17,14 @@ h3, h5 {
 }
 h4 {
     font-style: italic;
+}
+a {
+    color: red;
+    text-decoration: none;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    text-decoration: underline;
 }
