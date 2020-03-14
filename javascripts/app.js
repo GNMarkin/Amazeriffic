@@ -11,31 +11,37 @@ var main = function () {
     $(".tabs a span").toArray().forEach(function (Element) {
         $(Element).on("click", function () {
             var $element = $(Element),
-                $content;
+                $content,
+                $button;
             $(".tabs span").removeClass("active");
             $element.addClass("active");
             $("main .content").empty();
 
             if ($element.parent().is(":nth-child(1)")) {
+                //console.log("Щелчок на первой вкладке!");
                 $content = $("<ul>");
                 var index;
                 for (index = toDos.length - 1; index >= 0; index = index - 1){
                     $content.append($("<li>").text(toDos[index]));
                 }
-                $("main .content").append($content);
-                console.log("Щелчок на первой вкладке!");
 
             } else if ($element.parent().is(":nth-child(2)")) {
+                //console.log("Щелчок на второй вкладке");
                 $content = $("<ul>");
                 toDos.forEach(function (todo) {
                     $content.append($("<li>").text(todo));
                 });
-                $("main .content").append($content);
-                console.log("Щелчок на второй вкладке");
                 
             } else if ($element.parent().is(":nth-child(3)")) {
-                console.log("Щелчок на третьей вкладке");
+                //console.log("Щелчок на третьей вкладке");
+                $button = $("<button>").text("+");
+                $content = $("<div>").append($("<input>")).append($button);
+                $button.on("click", function () {
+                    //TODO: Сделать проверку заполнения поля ввода. если не пустое добавить в OL
+                    console.log("test") 
+                });
             };
+            $("main .content").append($content);
             return false;
         });
     });
