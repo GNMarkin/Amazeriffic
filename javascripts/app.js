@@ -41,7 +41,7 @@ var main = function () {
                     if ($("input").val() !== "") {
                         toDos.push($("input").val());
                         $("input").val("");
-                    }                     
+                    }
                 });
             };
             $("main .content").append($content);
