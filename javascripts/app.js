@@ -37,8 +37,11 @@ var main = function () {
                 $button = $("<button>").text("+");
                 $content = $("<div>").append($("<input>")).append($button);
                 $button.on("click", function () {
-                    //TODO: Сделать проверку заполнения поля ввода. если не пустое добавить в OL
-                    console.log("test") 
+                    //Сделать проверку заполнения поля ввода. если не пустое добавить в OL
+                    if ($("input").val() !== "") {
+                        toDos.push($("input").val());
+                        $("input").val("");
+                    }                     
                 });
             };
             $("main .content").append($content);

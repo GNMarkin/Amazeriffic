@@ -14,6 +14,8 @@ header {
     padding: 25px 0 25px 0;
     border-bottom: 1px solid #ddd;
 }
+
+/* MAIN LOGO */
 h1 {
     font-family: 'Ubuntu', sans-serif;
     font-style: italic;
@@ -53,6 +55,34 @@ main {
 }
 .tabs a span.active {
     background: #eee;
+}
+
+/* MAIN CONTENT */
+main .content {
+    padding: 30px 10px 30px 10px;
+    border-radius: 0 5px 5px 5px;
+    background: #eee;
+}
+main .content li {
+    border-radius: 5px;
+    padding: 3px;
+    background: #eff;
+    margin: 0 0 10px 0;
+}
+main .content button {
+    font-weight: bold;
+    padding: 0 3px 0 3px;
+    border-radius: 5px;
+    background: #ccc;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 1.3em;
+  }
+main .content p {
+    background: yellow;
+}
+main .content input {
+    font-size: 1.5em;
 }
 
 /*=================== FOOTER =======================*/
